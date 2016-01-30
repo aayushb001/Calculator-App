@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My_Calculator</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="appTitle">Calculator</string>
+    <string name="inp1">Input 1:</string>
+    <string name="inp2">Input 2:</string>
+</resources>
