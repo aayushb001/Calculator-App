@@ -3,7 +3,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-
 //my imports
 import android.widget.EditText;
 import android.view.View;
@@ -22,7 +21,6 @@ public class MyCalculator extends AppCompatActivity /*implements View.*/ {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_calculator);
 
-
         /*InputNumber will convert string inputs to double value we
         can work with*/
         final InputNumbers inputObject = new InputNumbers();
@@ -33,11 +31,9 @@ public class MyCalculator extends AppCompatActivity /*implements View.*/ {
         Button btnMultiply = (Button)findViewById(R.id.btnMultiply);
         Button btnDivide = (Button)findViewById(R.id.btnDivide);
 
-
         final EditText numDisplay1 = (EditText)findViewById(R.id.numDisp1);
         final EditText numDisplay2 = (EditText)findViewById(R.id.numDisp2);
         final TextView answerDisplay = (TextView)findViewById(R.id.ansDisp);
-
 
         btnPlus.setOnClickListener(
                 new Button.OnClickListener(){
@@ -66,6 +62,7 @@ public class MyCalculator extends AppCompatActivity /*implements View.*/ {
                     }
 
                 });
+                
         btnDivide.setOnClickListener(
                 new Button.OnClickListener(){
                     @Override
@@ -120,6 +117,7 @@ public class MyCalculator extends AppCompatActivity /*implements View.*/ {
                     }
 
                 });
+                
         btnMultiply.setOnClickListener(
                 new Button.OnClickListener(){
                     @Override
@@ -144,9 +142,7 @@ public class MyCalculator extends AppCompatActivity /*implements View.*/ {
                             answerDisplay.setText(""+ ans);
                         }
                     }
-
                 });
-
     }
 
     @Override
